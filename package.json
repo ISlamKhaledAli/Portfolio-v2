@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "git@github.com:ISlamKhaledAli/Portfolio-v2.git",
+  "homepage": "https://ISlamKhaledAli.github.io/Portfolio-v2",
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.2",
