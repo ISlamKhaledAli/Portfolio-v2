@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profile from '../assets/projects/profile.jpg';
 
 
 const About = () => {
@@ -39,7 +40,7 @@ const About = () => {
         }}
     >
         <img
-            src="/profile.jpg"
+            src= {profile}
             alt="Profile"
             style={{
                 width: '100%',
