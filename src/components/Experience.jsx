@@ -23,18 +23,9 @@ const Experience = () => {
                 Qualification & Experience
             </motion.h2>
 
-            <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative' }}>
+            <div className="timeline-container">
                 {/* Vertical Line */}
-                <div style={{
-                    position: 'absolute',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    top: 0,
-                    bottom: 0,
-                    width: '2px',
-                    background: 'linear-gradient(to bottom, var(--primary), var(--secondary), transparent)',
-                    opacity: 0.3
-                }}></div>
+                <div className="timeline-line"></div>
 
                 {experiences.map((exp, index) => (
                     <motion.div
@@ -42,36 +33,12 @@ const Experience = () => {
                         initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        style={{
-                            display: 'flex',
-                            justifyContent: index % 2 === 0 ? 'flex-end' : 'flex-start',
-                            marginBottom: '3rem',
-                            position: 'relative'
-                        }}
+                        className="timeline-item"
                     >
                         {/* Dot */}
-                        <div style={{
-                            position: 'absolute',
-                            left: '50%',
-                            top: '0',
-                            transform: 'translate(-50%, 0)',
-                            width: '20px',
-                            height: '20px',
-                            background: 'var(--bg-dark)',
-                            border: '4px solid var(--primary)',
-                            borderRadius: '50%',
-                            zIndex: 2
-                        }}></div>
+                        <div className="timeline-dot"></div>
 
-                        <div className="glass" style={{
-                            width: '45%',
-                            padding: '1.5rem',
-                            borderRadius: '15px',
-                            textAlign: 'left', // Keep text left aligned for better readability even if box is on right
-                            position: 'relative',
-                            marginRight: index % 2 === 0 ? '50px' : '0',
-                            marginLeft: index % 2 !== 0 ? '50px' : '0'
-                        }}>
+                        <div className="glass timeline-content">
                             <h3 style={{ fontSize: '1.2rem', color: 'var(--primary)' }}>{exp.role}</h3>
                             <h4 style={{ fontSize: '1rem', marginBottom: '0.5rem', fontWeight: 'bold' }}>{exp.company}</h4>
                             <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', display: 'block', marginBottom: '1rem' }}>{exp.period}</span>

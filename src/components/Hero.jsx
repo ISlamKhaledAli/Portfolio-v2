@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           style={{ fontSize: "4rem", lineHeight: "1.1", marginBottom: "1rem" }}
         >
-          Islam Khaled Ali <br />
+          Islam Khaled <br />
           <span className="gradient-text">Full-Stack Developer</span>
         </motion.h1>
         <motion.p
