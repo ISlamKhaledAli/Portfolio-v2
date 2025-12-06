@@ -91,7 +91,7 @@ const Hero = () => {
     );
   }}
 >
-  Download CV
+  OpenCV
 </motion.button>
 
       </div>
