@@ -91,7 +91,7 @@ const Hero = () => {
     );
   }}
 >
-  OpenCV
+  Open CV
 </motion.button>
 
       </div>
