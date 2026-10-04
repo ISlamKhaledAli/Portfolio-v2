@@ -86,7 +86,7 @@ const Hero = () => {
   }}
   onClick={() => {
     window.open(
-      "https://drive.google.com/file/d/11coBwgYesDklWmd3wjirr8lfifxwXpQe/view?usp=drive_link",
+      "https://drive.google.com/file/d/1TzWeyNJkuyS_Ic00yJNdYruBudD3FBFz/view?usp=drive_link",
       "_blank"
     );
   }}
